@@ -1,0 +1,24 @@
+
+
+<div class="app-container">
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+  
+    <!-- Optional: Navigation links to each step (for testing) -->
+    <nav>
+      <button mat-button routerLink="/step1">Step 1</button>
+      <button mat-button routerLink="/step2">Step 2</button>
+      <button mat-button routerLink="/step3">Step 3</button>
+    </nav>
+  
+    <!-- The router outlet will load the corresponding step component based on the route -->
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  
+    <footer>
+      <p>&copy; 2024 Your App Name</p>
+    </footer>
+  </div>
+  

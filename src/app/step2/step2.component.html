@@ -1,0 +1,15 @@
+<h2>Step 2: Contact Information</h2>
+<form action="submit_contact.php" method="POST">
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+    <small>Format: 1234567890</small>
+
+   
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+
+<button mat-raised-button color="primary" (click)="goToPreviousStep()">Previous</button>
+<button mat-raised-button color="primary" (click)="goToNextStep()">Next</button>
+</form>
